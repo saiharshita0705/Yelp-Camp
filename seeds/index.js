@@ -24,11 +24,11 @@ const seedDB = async() => {
         const random1000 = Math.floor(Math.random()*1000);
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
-            author: '674d03855ff740ea13a45bda',  // Personal author ID
+            author: '6758e41fcb7e88520a93d1d3',  // Personal author ID
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             // image: `http://picsum.photos/400?random=${Math.random()}`,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique delectus ratione, ducimus id soluta at ea corporis dolor quae commodi itaque cupiditate temporibus sapiente, iste, quidem debitis? Accusantium, quae?',
+            description: 'Check out the campground for exciting experience. This campground rejunuvates the energy that you lost from your work stress. Enjoy the holiday exploring amazing places around, trying few fun activites. Feel youeself again!!!',
             price: price,
             geometry: {
 
@@ -38,16 +38,24 @@ const seedDB = async() => {
             },
             images: [
                 {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/rqsu3xylepvcwnsyguiw.jpg',
-                  filename: 'YelpCamp/rqsu3xylepvcwnsyguiw',
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733935754/YelpCamp/zymz8v1cpvvjggevyma8.jpg',
+                  filename: 'YelpCamp/zymz8v1cpvvjggevyma8',
                 },
                 {
                   url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/nco0uatdhhfvasu3x3ac.jpg',
-                  filename: 'YelpCamp/nco0uatdhhfvasu3x3ac',
+                  filename: 'YelpCamp/c8vfrlso5lxozvstqgsf',
                 },
                 {
                   url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
-                  filename: 'YelpCamp/ym22fzrc7wyz5wkl1f4w',
+                  filename: 'YelpCamp/fcceoquyeka9rb080znt',
+                },
+                {
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
+                  filename: 'YelpCamp/mxe9zsm9upgi5yjwfb6q',
+                },
+                {
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
+                  filename: 'YelpCamp/y2ds3buzsjibijayue9o',
                 }
               ],
             
