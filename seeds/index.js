@@ -37,26 +37,28 @@ const seedDB = async() => {
 
             },
             images: [
+              {
+                url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/mxe9zsm9upgi5yjwfb6q.jpg',
+                filename: 'YelpCamp/mxe9zsm9upgi5yjwfb6q',
+              },
+              
                 {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733935754/YelpCamp/zymz8v1cpvvjggevyma8.jpg',
-                  filename: 'YelpCamp/zymz8v1cpvvjggevyma8',
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/y2ds3buzsjibijayue9o.jpg',
+                  filename: 'YelpCamp/y2ds3buzsjibijayue9o',
                 },
+                
                 {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/nco0uatdhhfvasu3x3ac.jpg',
-                  filename: 'YelpCamp/c8vfrlso5lxozvstqgsf',
-                },
-                {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/fcceoquyeka9rb080znt.jpg',
                   filename: 'YelpCamp/fcceoquyeka9rb080znt',
                 },
                 {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
-                  filename: 'YelpCamp/mxe9zsm9upgi5yjwfb6q',
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/c8vfrlso5lxozvstqgsf.jpg',
+                  filename: 'YelpCamp/c8vfrlso5lxozvstqgsf',
                 },
                 {
-                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/ym22fzrc7wyz5wkl1f4w.jpg',
-                  filename: 'YelpCamp/y2ds3buzsjibijayue9o',
-                }
+                  url: 'https://res.cloudinary.com/dndtptavq/image/upload/v1733603339/YelpCamp/zymz8v1cpvvjggevyma8.jpg',
+                  filename: 'YelpCamp/zymz8v1cpvvjggevyma8',
+                },
               ],
             
         })
