@@ -21,7 +21,7 @@ const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 
-const dbURL = 'mongodb://localhost:27017/yelp-camp';
+const dbURL = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 
 //mongoose.connect('mongodb://localhost:27017/yelp-camp');  // local host
 mongoose.connect(dbURL, {
@@ -56,12 +56,12 @@ db.once("open", () => {
     console.log("Database Connected");
 });
 
-
+const secret = process.env.SECRET || 'thisshouldbeasecret!';
 const store = MongoStore.create({
     mongoUrl: dbURL,
     touchAfter: 24 * 60 * 60,
     crypto: {
-        secret: 'thisshouldbeasecret!'
+        secret: secret,
     }
 });
 
@@ -72,7 +72,7 @@ store.on("error", function (e) {
 const sessionConfig = {
     store: store,
     name: 'session',
-    secret: 'thisshouldbeabettersecret!',
+    secret: secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
