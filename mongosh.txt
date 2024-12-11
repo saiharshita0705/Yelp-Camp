@@ -1,0 +1,9 @@
+opening database:
+
+
+open mongosh app, which is shell
+
+type mongosh
+show databases
+show collections
+db.collectionName.find()
