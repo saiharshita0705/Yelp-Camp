@@ -4,7 +4,7 @@
     </div>
     <h1>ALL CAMPGROUNDS</h1>
     <div>
-        <a href="/campgrounds/new">Add Campground</a>
+        <a href="/campgrounds/new" class="btn w-100 btn-success text-white mb-3">Add Campground</a>
     </div>
     <ul>
         <% for ( let campground of campgrounds) {%>
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <% if(campground.images.length){ %>
-                        <img crossorigin="anonymous" class="img-fluid" src="<%= campground.images[0].url  %>" alt="">
+                        <img crossorigin="anonymous" class="img-fluid" src="<%= campground.images[0].url  %>" alt="" style="width: 100%; height: 230px; border: none; object-fit: cover;">
                         <% } else{ %>
                         <img crossorigin="anonymous" class="img-fluid" src="" alt="">
                         <% } %>
